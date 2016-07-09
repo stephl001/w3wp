@@ -1,0 +1,23 @@
+{
+  "name": "w3wp",
+  "version": "1.0.0",
+  "description": "Converts w3wp#n instance names to actual application pool names.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephl001/w3wp.git"
+  },
+  "keywords": [
+    "iis",
+    "windows"
+  ],
+  "author": "Stephane Larocque",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephl001/w3wp/issues"
+  },
+  "homepage": "https://github.com/stephl001/w3wp#readme"
+}
