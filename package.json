@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/stephl001/w3wp/issues"
   },
-  "homepage": "https://github.com/stephl001/w3wp#readme"
+  "homepage": "https://github.com/stephl001/w3wp#readme",
+  "devDependencies": {
+    "eslint": "^3.0.1"
+  }
 }
