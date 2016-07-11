@@ -2,7 +2,9 @@
 
 let _ = require('lodash');
 let perfmon = require('perfmon');
-let appPools = require('./appPools');
+let appPools = require('./lib/appPools');
+
+const DefaultMaxEntries = 20;
 
 module.exports = function (maxEntries) {
   let W3wp = function () { };
@@ -12,7 +14,7 @@ module.exports = function (maxEntries) {
   let lastHash = 0;
 
   let suffixes = [''];
-  suffixes = _.concat(suffixes, _.map(_.range(1, maxEntries || 20), i => `#${i}`));
+  suffixes = _.concat(suffixes, _.map(_.range(1, maxEntries || DefaultMaxEntries), i => `#${i}`));
 
   let counterNames = _.map(suffixes, s => `Process(w3wp${s})\\ID Process`);
   perfmon(counterNames, (e, d) => {
